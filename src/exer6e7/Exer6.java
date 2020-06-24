@@ -23,4 +23,13 @@ public class Exer6 {
         double media = total / vendas.size();
         System.out.println(media);
     }
+
+    // usando formato funcional:
+    @Test
+    public void exer7() {
+        double total = getVendas().stream().mapToDouble(f -> f.getValor()).average().getAsDouble();
+        System.out.println(total);
+    }
+
+
 }
