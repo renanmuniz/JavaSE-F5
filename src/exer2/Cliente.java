@@ -1,4 +1,4 @@
 package exer2;
 
-public class Cliente {
+public class Cliente implements Vendedor, Pessoa {
 }
